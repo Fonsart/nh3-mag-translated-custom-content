@@ -10,6 +10,9 @@
   "scripts": {
     "plugin-header": [
       "CliScripts\\PluginHeader::generate"
+    ],
+    "zip": [
+      "CliScripts\\Releases::makeZipFolder"
     ]
   },
   "autoload": {

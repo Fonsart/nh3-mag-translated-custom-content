@@ -20,3 +20,8 @@ function write($text = '') {
 function loadConfigFile() {
   return json_decode(file_get_contents('plugin.json'));
 }
+
+function normalize_plugin_name($name) {
+  $name = preg_replace('~ - ~', ' ', strtolower($name));
+  return preg_replace('~ ~', '-', $name);
+}

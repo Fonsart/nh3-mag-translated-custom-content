@@ -21,7 +21,7 @@ Class PluginHeader {
    * and be named with the lowercase value of the `pluginName` attribute.
    */
   private static function makeFile($config) {
-    $filename = self::normalizePluginName($config->pluginName).'.php';
+    $filename = normalize_plugin_name($config->pluginName).'.php';
     $lines = [
       '<?php',
       '/**',
@@ -70,11 +70,6 @@ Class PluginHeader {
     write("SUCCESS: The plugin header file \"$filename\" has been generated.");
 
     fclose($handle);
-  }
-
-  private static function normalizePluginName($name) {
-    $name = preg_replace('~ - ~', ' ', strtolower($name));
-    return preg_replace('~ ~', '-', $name);
   }
 
 }
