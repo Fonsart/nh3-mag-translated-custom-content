@@ -1,0 +1,20 @@
+{
+  "name": "mei/nh3-mag-translated-custom-content",
+  "description": "Manage translated custom content (such as categories name) for the NH3 Mag theme",
+  "keywords": ["nh3", "mag", "language", "internationalization", "translation"],
+  "license": "MIT",
+  "type": "wordpress-plugin",
+  "require": {
+    "php": ">=5.2.4"
+  },
+  "scripts": {
+    "plugin-header": [
+      "CliScripts\\PluginHeader::generate"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "CliScripts\\": "cli-scripts/"
+    }
+  }
+}
