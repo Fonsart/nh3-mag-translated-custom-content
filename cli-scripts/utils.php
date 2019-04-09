@@ -21,7 +21,17 @@ function loadConfigFile() {
   return json_decode(file_get_contents('plugin.json'));
 }
 
-function normalize_plugin_name($name, $separator = '-', $toUpper = false) {
+/**
+ * Normalize the $name passed in argument.
+ * By default, this remove all dash from the name, then replace all spaces by a defined separator (a dash "-" by default).
+ * You can pass a different separator with the second $separator parameter.
+ * The resulting name will be normalized in lower case unless you pass the third parameter $toUpper a `true` value.
+ * @param String $name The name to normalize
+ * @param String $separator The separator to use. Defaults to "-"
+ * @param Boolean $toupper Wether the name sould be in lower case (false) or upper case (true). Defaults to `false`.
+ * @return String The normalized name
+ */
+function normalize_name($name, $separator = '-', $toUpper = false) {
   $name = $toUpper ? strtoupper($name) : strtolower($name);
   $name = preg_replace('~ - ~', ' ', $name);
   return preg_replace('~ ~', $separator, $name);

@@ -21,7 +21,7 @@ Class PluginHeader {
    * and be named with the lowercase value of the `pluginName` attribute.
    */
   private static function makeFile($config) {
-    $filename = normalize_plugin_name($config->pluginName).'.php';
+    $filename = normalize_name($config->pluginName).'.php';
     $lines = [
       '<?php',
       '/**',
@@ -42,7 +42,7 @@ Class PluginHeader {
       $lines = array_merge($lines, [
         '',
         '// Main plugin file path',
-        'define(\''.normalize_plugin_name($config->pluginName, '_', true).'_MAIN_FILE\', __FILE__);',
+        'define(\''.normalize_name($config->pluginName, '_', true).'_MAIN_FILE\', __FILE__);',
       ]);
     }
 
