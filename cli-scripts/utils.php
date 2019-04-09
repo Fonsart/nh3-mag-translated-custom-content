@@ -21,7 +21,8 @@ function loadConfigFile() {
   return json_decode(file_get_contents('plugin.json'));
 }
 
-function normalize_plugin_name($name) {
-  $name = preg_replace('~ - ~', ' ', strtolower($name));
-  return preg_replace('~ ~', '-', $name);
+function normalize_plugin_name($name, $separator = '-', $toUpper = false) {
+  $name = $toUpper ? strtoupper($name) : strtolower($name);
+  $name = preg_replace('~ - ~', ' ', $name);
+  return preg_replace('~ ~', $separator, $name);
 }

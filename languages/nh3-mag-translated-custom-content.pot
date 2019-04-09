@@ -2,7 +2,25 @@
 msgid ""
 msgstr ""
 "Language: \n"
+"POT-Creation-Date: 2019-04-09 11:18+0000\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"POT-Creation-Date: 2019-04-09 08:24+0000\n"
 "X-Generator: Loco https://localise.biz/"
+
+#. Name of the plugin
+msgid "NH3 Mag - Translated Custom Content"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Manage translated custom content (such as categories name) for the NH3 Mag "
+"theme"
+msgstr ""
+
+#. Author of the plugin
+msgid "MEI"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://heig-vd.ch/rad/instituts/mei/"
+msgstr ""

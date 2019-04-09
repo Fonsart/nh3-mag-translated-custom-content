@@ -39,15 +39,15 @@ Class PluginHeader {
     ];
 
     if (!isset($config->mainFileConstant) || true === $config->mainFileConstant) {
-      array_merge($lines, [
+      $lines = array_merge($lines, [
         '',
         '// Main plugin file path',
-        'define(\''.strtoupper($config->pluginName).'_MAIN_FILE\', __FILE__);',
+        'define(\''.normalize_plugin_name($config->pluginName, '_', true).'_MAIN_FILE\', __FILE__);',
       ]);
     }
 
     if (isset($config->bootstrapFilePath)) {
-      array_merge($lines, [
+      $lines = array_merge($lines, [
         '',
         '// Bootstrap the plugin.',
         "require_once '$config->bootstrapFilePath';"

@@ -6,5 +6,5 @@
     "authorUri": "https://heig-vd.ch/rad/instituts/mei/",
     "textDomain": "nh3-mag-translated-custom-content",
     "domainPath": "/languages",
-    "mainFileConstant": false
+    "bootstrapFilePath": "bootstrap.php"
 }
