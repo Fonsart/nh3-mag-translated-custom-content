@@ -13,7 +13,7 @@
 // DO NOT ALTER ITS CONTENT
 
 // Main plugin file path
-define('NH3_MAG_TRANSLATED_CUSTOM_CONTENT_MAIN_FILE', __FILE__);
+define( 'NH3_MAG_TRANSLATED_CUSTOM_CONTENT_MAIN_FILE', __FILE__ );
 
 // Bootstrap the plugin.
 require_once 'bootstrap.php';

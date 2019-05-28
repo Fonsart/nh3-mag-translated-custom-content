@@ -1,10 +1,10 @@
 {
-    "pluginName": "NH3 Mag - Translated Custom Content",
-    "description": "Manage translated custom content (such as categories name) for the NH3 Mag theme",
-    "version": "1.0.0",
-    "author": "MEI",
-    "authorUri": "https://heig-vd.ch/rad/instituts/mei/",
-    "textDomain": "nh3-mag-translated-custom-content",
-    "domainPath": "/languages",
-    "bootstrapFilePath": "bootstrap.php"
+  "pluginName": "NH3 Mag - Translated Custom Content",
+  "description": "Manage translated custom content (such as categories name) for the NH3 Mag theme",
+  "version": "1.0.0",
+  "author": "MEI",
+  "authorUri": "https://heig-vd.ch/rad/instituts/mei/",
+  "textDomain": "nh3-mag-translated-custom-content",
+  "domainPath": "/languages",
+  "bootstrapFilePath": "bootstrap.php"
 }
